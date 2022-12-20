@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="Utf-8" />
+    <title>TaniHenkan</title>
+    <!-- <script>
+function noSpaceForm(obj) { // 공백사용못하게
+    var str_space = /\s/;  // 공백체크
+    if(str_space.exec(obj.value)) { //공백 체크
+        alert("해당 항목에는 공백을 사용할수 없습니다.\n\n공백은 자동적으로 제거 됩니다.");
+        obj.focus();
+        obj.value = obj.value.replace(/\s| /gi,''); // 공백제거
+        return false;
+    } 
+}
+</script> -->
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/main.js"></script>
+  </head>
+
+  <body>
+    <form action="unitX.jsp">
+      <div class="main">
+        <div class="title">단위 변환</div>
+        <div class="subtitle">변환 할 값</div>
+        <div>
+          <input class="ip" name="num" />
+        </div>
+        <div>
+          <div class="subtitle">변환 종류</div>
+          <div>
+            <select id="henkan" name="henkan">
+              <option value="cmInch">cm ⇒ inch</option>
+              <option value="m2P">㎡ ⇒ 평</option>
+              <option value="cF">℃ ⇒ ℉</option>
+              <option value="kmhMh">km/h ⇒ m/h</option>
+            </select>
+          </div>
+        </div>
+        <div class="btnBox">
+          <button id="btn">변환 개시</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
